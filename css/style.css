@@ -1,0 +1,404 @@
+body{
+    width: 100%;
+}
+html{
+    width: 100;
+}
+.header{
+    width: 100;
+}
+.material-icons{
+    display: none;
+}
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+.top-font{
+    font-size: xxx-larger; 
+    font-family: 'Noto Sans Japanese', sans-serif;
+
+}
+.topimg{
+    background-image: url(../img/happyegg-head-img.jpg);
+    background-color: rgba(255,255,255,0.3);
+    background-blend-mode: soft-light;
+    width: 100vw;
+    height: 55vw;  
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25% 60px 25%;
+    text-align: center;
+    background-position: center center;
+}
+.topimg p{
+    display: none;
+}
+.topimg h3{
+    font-weight: 700;
+    color: black;
+}
+.topimg-company{
+    background-image: url(../img/happy-egg-company.jpg);
+    width: 100vw;  
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20% 20%;
+    text-align: center;
+}
+.topimg-recruit{
+    background-image: url(../img/happy-egg-recuruit.jpg);
+    width: 100vw;  
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20% 20%;
+    text-align: center;
+}
+#make-smile-2{
+    display: none;
+}
+
+header ul {
+    width: 100%;
+    list-style: none;
+    z-index: 100;
+}
+
+header ul li{
+    height: 60px;
+    padding: 0 35px;
+    color: white;
+    line-height: 350%;
+    font-weight: bold;
+}
+header ul li:hover{
+    background-color: rgb(42, 42, 42);
+    color: #4AA2CE;
+    text-decoration: none;
+}
+header ul a:hover{
+    text-decoration: none;
+}
+.overlay{
+    display: none;
+}
+
+.content-1
+{
+    margin: 8% 0 0 ;
+    text-align: center;
+}
+.content-1 div{
+    padding: 4%;
+    background-color: #F4F4E7;
+}
+.content-1 p{
+   letter-spacing:3px;
+   margin: auto auto; 
+   width: 50%;
+   line-height: 275%;
+   font-weight: bold;
+}
+/* 以下コンテンツ２ */
+#business{
+    width: 85%;
+    margin: 1% auto;
+    text-align: center;
+    padding-top: 8%;
+}
+
+.bus-container{
+    align-items: center;
+}
+.bus-container p{
+    width: 50%;
+    text-align: left;
+}
+#business-grid{
+    width: 80%;
+    margin: auto 10%;
+}
+#business-grid p{
+    font-family:"BIZ UDGothic";
+}
+#business-grid h3{
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+    font-style: normal;
+    font-weight: 600;  
+    
+}
+
+
+#reverse{
+    flex-direction: row-reverse;
+}
+
+
+#bottom-phrase{
+    text-align: center;
+    margin-top: 8%;
+    padding: 5%;
+    background-color: #F4F4E7;
+    letter-spacing:3px;
+}
+
+#recruit{
+    background-color: yellow;
+}
+#recruit:hover{
+    background-color: rgb(218, 218, 2);
+}
+
+.index-news table tr{
+    line-height: 4rem;
+    border-style: solid none solid;
+    border-width: 1px;
+}
+.index-news th{
+    font-weight: normal;
+}
+.index-news div a{
+    color: black;
+    border-bottom: solid 1px black  ;
+    text-decoration: none;
+}
+
+
+#foot-nav{
+    list-style: none;
+    width: 45%;
+    margin: 5%  auto 1%;
+}
+
+#foot-nav a {
+    color: black;
+     text-decoration: none;
+}
+
+#foot-nav a + a{
+    border-left: 1px solid black;
+    flex-grow:1;
+}
+
+.first-fnav{
+    flex-grow: 1;
+}
+
+
+#smile{
+    width: 10%;
+    margin: auto 45%;
+}
+table{
+    width: 60%;
+    margin: auto 20%;
+    text-align: left;
+}
+.company-table {
+    height: 200px;
+}
+table tr th{
+    text-align: center;
+}
+table tr td{
+    padding: 0 5%; 
+}
+
+#recruit-content{
+    margin-left: 15%;
+}
+
+
+#news-top{
+   padding: 80px;
+}
+@media screen and (max-width: 768px) {
+
+.upper-nav li{
+    display: none;
+}
+.upper-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.upper-nav ul{
+    padding-left:  3%;
+}
+#open{
+    padding-right: 3%;
+}
+
+.material-icons{
+    display: inline;
+    color: white;
+    font-size: 50px;
+}
+.topimg{
+    background-image: url(../img/happyegg-head-img.jpg);
+    width: 100vw;
+    height: 100vw;
+    padding: 60% 60px 105%;
+}
+
+#make-smile{
+    display: none;
+}
+#make-smile-2{
+    display: inline;
+}
+
+.overlay{
+    display: inline;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.90);
+    opacity: 0;
+    list-style: none;
+    pointer-events: none;
+    text-align: center;
+}
+.overlay span{
+    text-align: right;
+    padding-left: 70%;
+    font-size: 50px;
+}
+
+.overlay a{
+    padding: 5%;
+    text-align: center;
+    color: white;
+    display: block;
+}
+.overlay.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+#open .hide{
+    display: none;
+}
+.header.hide{
+    display: none;
+}
+.content-1 p{
+    width: 55%;
+    letter-spacing: 0px;
+    line-height: 200%;
+}
+main h1{
+    font-size: x-large;
+}
+.content-1 div{
+    border: solid 1px black;
+}
+#business h3{
+    font-size: larger;
+}
+#business-grid{
+    display: inline;
+}
+#business-grid p{
+    text-align: justify;
+}
+
+#business-grid img{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.bus-container p{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    line-height: 200%;
+}
+
+#bottom-phrase{
+    border: solid 1px black;
+    width: 100%
+}
+#bottom-phrase p{
+    text-align: center;
+    width: 55%;
+    margin:auto 21.5%;
+}
+
+.news-button{
+    width: 40%;
+    margin: 30% 30%;
+}
+table{
+    font-size: x-small;
+    margin: auto;
+}
+#recruit{
+    width: 60%;
+    border: black solid 1px;
+    border-radius: 50px;
+    margin: auto 20%;
+}
+#foot-nav{
+    display: none;
+    margin: auto auto;
+    width: 95%;
+    padding-left: 0%;
+    font-size: 80%;
+}
+/* 会社概要 */
+.topimg-company{
+    padding: 40% 20% 25%;
+}
+.company-table{
+    width: 75%;
+    margin-bottom: 5%;
+}
+#company-h1{
+    font-size: larger;
+}
+.company-table {
+    height: 200px;
+}
+
+/* ニュース */
+#news-top{
+    padding: 0;
+    padding-top: 80px;
+}
+#page-news table{
+    width: 75%;
+    margin: 10% auto;
+}
+/* 採用情報 */
+.topimg-recruit{
+    padding: 40% 20% 25%;
+}
+#recruit-h1 h1,
+#recruit-content h3{
+    font-size: larger;
+}
+#recruit-h1,
+#recruit-content{
+    margin-left: 5%;
+}
+
+#recruit{
+    font-size: smaller;
+}
+
+#recruit-content p{
+    width: 100;
+    text-align: center;
+}
+#mail-ad{
+    margin:15% auto;
+}
+#recruit-content h3{
+    margin-top: 8%;
+}
+#recruit-upper-p{
+    font-size: xx-small;
+    text-align: initial;
+}
+ }
+
+
+
+
